@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navMenuFragment"
+        android:title="Menu"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/navHomeFragment"
+        android:title="Buscar"
+        android:icon="@drawable/ic_search" />
+    <item
+        android:id="@+id/navShoppingCartFragment"
+        android:title="Tu Carrito"
+        android:icon="@drawable/ic_shopping_cart" />
+    <item
+        android:id="@+id/navDeliveryFragment"
+        android:title="Mi pedido"
+        android:icon="@drawable/ic_alarm" />
+</menu>

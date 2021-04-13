@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navHomeFragment">
+
+    <fragment
+        android:id="@+id/navMenuFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_homeFragment"
+            app:destination="@id/navHomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navHomeFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_shoppingCartFragment"
+            app:destination="@id/navShoppingCartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navShoppingCartFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.ShoppingCartFragment"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" >
+        <action
+            android:id="@+id/action_shoppingCartFragment_to_deliveryFragment"
+            app:destination="@id/navDeliveryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navDeliveryFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.DeliveryFragment"
+        android:label="fragment_delivery"
+        tools:layout="@layout/fragment_delivery" />
+    <fragment
+        android:id="@+id/shopsFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.ShopsFragment"
+        android:label="fragment_shops"
+        tools:layout="@layout/fragment_shops" >
+        <action
+            android:id="@+id/action_shopsFragment_to_navHomeFragment"
+            app:destination="@id/navHomeFragment" />
+        <action
+            android:id="@+id/action_shopsFragment_to_shopDetailFragment"
+            app:destination="@id/shopDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/shopDetailFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.ShopDetailFragment"
+        android:label="fragment_shop_detail"
+        tools:layout="@layout/fragment_shop_detail" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <action
+            android:id="@+id/action_productDetailFragment_to_shopDetailFragment"
+            app:destination="@id/shopDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_navMenuFragment"
+            app:destination="@id/navMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseRegisterFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.ChooseRegisterFragment"
+        android:label="fragment_choose_register"
+        tools:layout="@layout/fragment_choose_register" >
+        <action
+            android:id="@+id/action_chooseRegisterFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRegisterFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.NumberRegisterFragment"
+        android:label="fragment_number_register"
+        tools:layout="@layout/fragment_number_register" >
+        <action
+            android:id="@+id/action_numberRegisterFragment_to_chooseRegisterFragment"
+            app:destination="@id/chooseRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailRegisterFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.EmailRegisterFragment"
+        android:label="fragment_email_register"
+        tools:layout="@layout/fragment_email_register" >
+        <action
+            android:id="@+id/action_emailRegisterFragment_to_chooseRegisterFragment"
+            app:destination="@id/chooseRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberCodeRegisterFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.NumberCodeRegisterFragment"
+        android:label="fragment_number_code_register"
+        tools:layout="@layout/fragment_number_code_register" >
+        <action
+            android:id="@+id/action_numberCodeRegisterFragment_to_numberRegisterFragment"
+            app:destination="@id/numberRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberRegisterPasswordFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.NumberRegisterPasswordFragment"
+        android:label="fragment_number_register_password"
+        tools:layout="@layout/fragment_number_register_password" >
+        <action
+            android:id="@+id/action_numberRegisterPasswordFragment_to_numberCodeRegisterFragment"
+            app:destination="@id/numberCodeRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailCodeRegisterFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.EmailCodeRegisterFragment"
+        android:label="fragment_email_code"
+        tools:layout="@layout/fragment_email_code" >
+        <action
+            android:id="@+id/action_emailCodeRegisterFragment_to_emailRegisterFragment"
+            app:destination="@id/emailRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailRegisterPasswordFragment"
+        android:name="io.saphi.delivery.view.ui.fragments.EmailRegisterPasswordFragment"
+        android:label="fragment_email_password_register"
+        tools:layout="@layout/fragment_email_password_register" >
+        <action
+            android:id="@+id/action_emailRegisterPasswordFragment_to_emailCodeRegisterFragment"
+            app:destination="@id/emailCodeRegisterFragment" />
+    </fragment>
+</navigation>
