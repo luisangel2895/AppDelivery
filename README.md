@@ -1,4 +1,4 @@
 # AppDelivery
-Aplicacion hecha con kotlin y MVVM de android siguiendo los ultimos estandares, en esta aplicacion se muestran productos de tiendas y restaurante y el usuario tiene la posiblidad de pedirlos donde se enviara un delivery para la entrega del pedido.
+Application made with kotlin and Android MVVM following the latest standards, in this application products from stores and restaurants are shown and the user has the possibility of requesting them where a delivery will be sent for the delivery of the order.
 ## Tecnologias
 Kotlin, MVVM y jetpack.
